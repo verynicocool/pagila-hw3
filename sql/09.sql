@@ -26,5 +26,5 @@ FROM rental
 GROUP BY ROLLUP (EXTRACT (year FROM rental_date),
                  EXTRACT (month FROM rental_date),
                  EXTRACT (day FROM rental_date))
-ORDER BY "year", "month", "day", "count";   
+ORDER BY "year" ASC, "month" ASC, "day" ASC, "count" ASC;   
 

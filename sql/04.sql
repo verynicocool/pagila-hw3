@@ -16,4 +16,4 @@ EXCEPT ALL
      JOIN film_category USING (film_id) 
      JOIN category USING (category_id) 
      WHERE name = 'Horror') 
-ORDER BY last_name, first_name;
+ORDER BY last_name ASC, first_name ASC;
